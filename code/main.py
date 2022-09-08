@@ -1,5 +1,17 @@
 
 #%%
+class Node:
+    def __init__(self, value, next=None):
+        self.value = value
+        self.next = next
+    
+head = Node(1)
+head.next = Node(2)
+head.next.next = Node(3)
+head.next.next.next = Node(4)
+current = head
+current.next.next = None
+#%%
 '''
 squaring sorted array
 '''
