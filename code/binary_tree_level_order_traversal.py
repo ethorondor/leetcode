@@ -12,7 +12,7 @@ class TreeNode:
 
 
 def traverse(root):
-  result = []
+  result = deque()
   if root is None:
     return result
 
@@ -31,7 +31,7 @@ def traverse(root):
       if currentNode.right:
         queue.append(currentNode.right)
 
-    result.append(currentLevel)
+    result.appendleft(currentLevel)
 
   return result
         
