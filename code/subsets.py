@@ -1,6 +1,7 @@
 '''
 find all subsets
 '''
+#%%
 def find_subsets(nums):
     subset = []
     subset.append([])
@@ -13,4 +14,5 @@ def find_subsets(nums):
     return subset
 
 nums = [1,3,5]
-find_subsets(nums)
+l = find_subsets(nums)
+# %%
