@@ -6,6 +6,7 @@ class solutions:
     def can_finish(self, num_courses, prerequisites):
         # map each course to prereq list
         pre_map = {i:[] for i in range(num_courses)}
+        completed = []
         for crs, pre in prerequisites:
             pre_map[crs].append(pre)
             
@@ -23,6 +24,7 @@ class solutions:
                 if dfs(pre) == False:
                     return False
             visit_set.remove(crs)
+            completed.append(crs)
             pre_map[crs] = []
             return True
         
