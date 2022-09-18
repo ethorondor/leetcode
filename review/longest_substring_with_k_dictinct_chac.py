@@ -7,28 +7,22 @@ class solutions:
     def longest_substring(self, str, k):
         l = 0
         r = 1
-        substring = []
-        substring.append(str[0])
+        str_set = {}
         max_len = 0
-        while l < r and r < len(str):
-            if str[r] in substring:
-                if r - l + 1 > max_len:
-                    max_len = r-l+1
-                    max_str = str[l:r+1]
-                r += 1
-            elif str[r] not in substring and len(substring) < k:
-                substring.append(str[r])
-                if r - l + 1 > max_len:
-                    max_len = r-l+1
-                    max_str = str[l:r+1]
-                r += 1
-            elif str[r] not in substring and len(substring) >= k:
+        for r in range(len(str)):
+            if str[r] not in str_set:
+                str_set[str[r]] = 0
+            str_set[str[r]] += 1
+            if len(str_set) <= k:
+                max_len = max(max_len, r-l+1)
+                ans = str[l:r+1]
+            while len(str_set) >k:
+                str_set[str[l]] -= 1
+                if str_set[str[l]] == 0:
+                    str_set.pop(str[l])
                 l += 1
-                r = l + 1
-                substring = []
-                substring.append(str[l])
-
-        return max_str
+                
+        return ans
 str = 'arraci'
 k = 2
 s = solutions()
