@@ -27,26 +27,24 @@ def reorder(head):
     slow = slow.next
     fast = fast.next.next
     
-  second_half = reverse(slow.next)
-  first_half = head
-  
-  while second_half:
-    tmp1 = first_half.next
-    tmp2 = second_half.next
-    first_half.next = second_half
-    second_half = tmp1
-    first_half = tmp1
-    second_half = tmp2
-  
-      
-def reverse(head):
+  second = slow.next 
   prev = None
-  while head is not None:
-    next = head.next
-    head.next = prev
-    prev = head
-    head = next
-  return prev
+  slow.next = None
+  while second:
+    tmp = second.next 
+    second.next = prev 
+    prev = second 
+    second = tmp
+  first = head 
+  second = prev 
+  while second:
+    tmp1 = first.next
+    tmp2 = second.next
+    first.next = second
+    second.next = tmp1
+    first = tmp1
+    second = tmp2
+  
 
 
 
