@@ -1,5 +1,5 @@
 '''
-traverse a tree with BFS
+traverse a tree with BFS backward
 '''
 #%%
 from collections import deque
@@ -8,12 +8,10 @@ class tree_node:
         self.value = value
         self.left = None
         self.right = None
-    
-def traverse(root):
-    ans = []
-    if root is None:
-        return result
+        
+def traverse_tree_backward(root):
     q = deque()
+    ans = []
     q.append(root)
     while q:
         level_size = len(q)
@@ -25,7 +23,7 @@ def traverse(root):
                 q.append(current_node.left)
             if current_node.right:
                 q.append(current_node.right)
-        ans.append(current_level)
+        ans.insert(0,current_level)
     return ans
     
 root = tree_node(12)
@@ -34,5 +32,5 @@ root.right = tree_node(1)
 root.left.left = tree_node(9)
 root.right.left = tree_node(10)
 root.right.right = tree_node(5)
-traverse(root)
+traverse_tree_backward(root)
 # %%
