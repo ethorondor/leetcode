@@ -12,7 +12,7 @@ class solutions:
             else:
                 l += 1
                 r += 1
-        return nums
+        return len(nums)
     
 nums = [1,4,4,4,6,7,7]
 s = solutions()
