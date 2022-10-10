@@ -15,11 +15,9 @@ class solutions:
         def in_order(root):
             if root is None:
                 return
-            print('hello')
             in_order(root.left)
             res.append(root.value)
             in_order(root.right)
-            print('hello')
         in_order(root)
         return res            
         
