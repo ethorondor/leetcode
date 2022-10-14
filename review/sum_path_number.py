@@ -34,5 +34,5 @@ root.left.left = tree_node(4)
 root.right.left = tree_node(7)
 root.right.right = tree_node(5)
 s = 23
-paths =find_sum_of_paths(root)
+find_sum_of_paths(root)
 # %%

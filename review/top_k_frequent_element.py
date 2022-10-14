@@ -6,6 +6,7 @@ from heapq import *
 class solutions:
     def top_k_frequent_elements(self, nums, k):
         freq_map = {}
+        #use frequency as index
         freq = [[] for i in range(len(nums)+1)]
         for n in nums:
             if n not in freq_map:
@@ -24,5 +25,5 @@ class solutions:
             
 nums = [1,5,0,5,0,5]
 s = solutions()
-ans = s.top_k_frequent_elements(nums,k = 2)
+s.top_k_frequent_elements(nums,k = 2)
 # %%

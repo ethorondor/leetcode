@@ -23,7 +23,10 @@ def traverse_tree_backward(root):
                 q.append(current_node.left)
             if current_node.right:
                 q.append(current_node.right)
+        # traversal backward
         ans.insert(0,current_level)
+        # traversal forward
+        #ans.append(current_level)
     return ans
     
 root = tree_node(12)
