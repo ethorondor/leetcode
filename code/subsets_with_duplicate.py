@@ -24,5 +24,5 @@ def subsets_with_duplicate(nums):
     return subsets
             
 nums = [1,3,3,3,5]
-l = subsets_with_duplicate(nums)
+subsets_with_duplicate(nums)
 # %%
