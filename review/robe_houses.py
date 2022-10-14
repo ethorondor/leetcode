@@ -1,6 +1,7 @@
 '''
 robe houses
 '''
+#%%
 class solutions:
     def robe_houses(self, nums):
         rob1 = 0
@@ -13,3 +14,4 @@ class solutions:
 nums = [2,7,9,3,1]
 s = solutions()
 s.robe_houses(nums)
+# %%

@@ -1,6 +1,7 @@
 '''
 smallest subarry with a greated sum
 '''
+#%%
 import math
 class solutions:
     def smallest_subarray(self, nums, target):
@@ -25,3 +26,4 @@ nums = [2,1,5,2,3,2]
 target = 7   
 s = solutions()
 s.smallest_subarray(nums, target)
+# %%
