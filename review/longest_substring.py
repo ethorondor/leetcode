@@ -1,5 +1,5 @@
 '''
-longest substring
+longest substring with unique characters
 '''
 #%%
 class solutions:

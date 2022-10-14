@@ -14,7 +14,7 @@ class solutions:
             ans[i] = ans[i-1]+heappop(min_heap)
         for i in range(len(ans)):
             result += ans[i]
-        return resule
+        return result
     
 nums = [3,1,11,5]
 s = solutions()

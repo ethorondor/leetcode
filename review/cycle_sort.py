@@ -1,6 +1,7 @@
 '''
 cycle sort
 '''
+#%%
 class solutions:
     def cycle_sort(self, nums):
         i = 0
@@ -16,3 +17,4 @@ class solutions:
 nums = [1,3,2,5,4]
 s = solutions()
 s.cycle_sort(nums)
+# %%

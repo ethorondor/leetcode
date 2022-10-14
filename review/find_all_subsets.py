@@ -1,6 +1,7 @@
 '''
 find all subsets
 '''
+#%%
 class solutions:
     def subsets(self, nums):
         ans = []
@@ -12,6 +13,7 @@ class solutions:
                 sub1.append(i)
                 ans.append(sub1)
         return ans
-nums = [1,3]
+nums = [1,3,2]
 s = solutions()
 s.subsets(nums)
+# %%

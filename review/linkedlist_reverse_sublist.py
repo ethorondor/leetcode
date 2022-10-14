@@ -34,5 +34,5 @@ head.next = node(2)
 head.next.next = node(3)
 head.next.next.next = node(4)
 head.next.next.next.next = node(5)
-l = reverse_sublist(head, 1, 3)
+reverse_sublist(head, 1, 3)
 # %%
