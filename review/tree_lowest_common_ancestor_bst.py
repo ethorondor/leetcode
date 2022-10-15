@@ -7,6 +7,7 @@ class node:
         self.value = value
         self.left = None
         self.right = None
+
         
 def lowest_common_ancestor(root, p, q):
     if root.value == p.value or root.value == q.value:
@@ -23,7 +24,7 @@ def lowest_common_ancestor(root, p, q):
         return left or right
     
 p = node(4)
-q = node(8)    
+q = node(0)    
 root = node(6)
 root.left = node(2)
 root.right = node(8)

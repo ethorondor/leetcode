@@ -7,7 +7,6 @@ class tree_node:
         self.value = value
         self.left = None
         self.right = None
-
 class solutions:
     def balanced_tree(self, root):
         def dfs(root):
