@@ -1,6 +1,7 @@
 '''
 find all paths
 '''
+#%%
 class tree_node:
     def __init__(self, value, left=None, right=None):
         self.value = value
@@ -38,3 +39,4 @@ root.right.left = tree_node(6)
 root.right.right = tree_node(7)
 
 find_paths(root, 10)
+# %%
