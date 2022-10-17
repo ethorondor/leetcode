@@ -2,9 +2,6 @@
 linkedlist cycle
 '''
 #%%
-from unittest.loader import VALID_MODULE_NAME
-
-
 class Node:
     def __init__(self, value, next=None):
         self.value = value
