@@ -14,7 +14,7 @@ def right_side(root):
         if root is None:
             return None
         res.append(root.value)
-        right = dfs(root.right)
+        dfs(root.right)
     dfs(root)
     return res
 root = node(4)
