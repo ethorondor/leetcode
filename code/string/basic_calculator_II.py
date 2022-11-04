@@ -23,7 +23,7 @@ class solutions:
                 num = 0
         stack.append(num)
         return sum(stack)  
-s = '2+2*3-5+4/4'
+string = '2+2*3-5+4/4'
 solution = solutions()
-solution.calculation(s)
+solution.calculation(string)
 # %%
