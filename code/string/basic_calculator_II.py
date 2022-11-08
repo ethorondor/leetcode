@@ -7,6 +7,7 @@ class solutions:
         num = 0
         sign = '+'
         stack = []
+        s = s + '+'
         for i in s:
             if i.isdigit():
                 num = num*10 + int(i)
@@ -21,7 +22,6 @@ class solutions:
                     stack.append(int(stack.pop()/num))
                 sign = i
                 num = 0
-        stack.append(num)
         return sum(stack)  
 string = '2+2*3-5+4/4'
 solution = solutions()
