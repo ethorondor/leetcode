@@ -2,7 +2,7 @@
 9 palindrome number
 '''
 #%%
-x = -121
+x = 121
 class solutions:
     def is_palindrome(self, nums):
         l ,r = 0, len(str(nums))-1

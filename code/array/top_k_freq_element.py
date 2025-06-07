@@ -19,4 +19,4 @@ class Solutions:
         return res
 sln = Solutions()
 sln.top_k_freq(nums,k)
-# %%
+#%%
